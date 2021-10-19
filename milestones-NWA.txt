@@ -1,0 +1,23 @@
+
+Nolan Askew
+GitHub: nolanaskew
+
+Objectives for challenge: 
+1. Learn the basics of Unity and get some exposure to how scripting works
+2. Create a sample project to get a feel for how creating a project works
+3. Add a game object and write a script that compiles and affects the object
+4. Begin to work on UI design for the title screen for the main project
+5. Have the UI design compile and take the user into the game
+6. Create a basic entity for the game
+7. Add a feature to the entity
+8. Start to think about how we can implement Dijkstra's algorithm in our game
+
+Project Rubric - 40 Points:
+25 - Script is successfully added to an entity and compiles
+10 - UI Design for project is implemented and compiles
+5 - Code formatting, commenting
+
+Timelog
+10/18/21: 2 hours -- worked in lab to create milestones and a sample object 
+		  2 hours -- created a sample project and followed a tutorial on how 					 to use scripting in Unity
+10/19/21: 
