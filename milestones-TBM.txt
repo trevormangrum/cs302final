@@ -36,8 +36,11 @@ Project Rubric for First Sprint (40 pts):
 10 - Code compiles
 10 - Game window successfully opens
 5 -  Code commenting, formatting
-15 - Simple UI and map are visible in game window
+15 - Simple UI or map is visible in game window
 
 
 Time Log (up until 10/22/2021):
 10/18/2021 -- 2 hrs -- Worked on milestones and setting up repo 
+10/21/2021 -- 2 hrs -- Worked on learning the basics of the Unity Editor and created a basic Level Select UI.
+10/21/2021 -- 2 hrs -- Worked on learning about sprite creation and tilesets to create the first towers/levels.
+
