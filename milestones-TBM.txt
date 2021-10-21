@@ -42,5 +42,11 @@ Project Rubric for First Sprint (40 pts):
 Time Log (up until 10/22/2021):
 10/18/2021 -- 2 hrs -- Worked on milestones and setting up repo 
 10/21/2021 -- 2 hrs -- Worked on learning the basics of the Unity Editor and created a basic Level Select UI.
-10/21/2021 -- 2 hrs -- Worked on learning about sprite creation and tilesets to create the first towers/levels.
+10/21/2021 -- 2 hrs -- Worked on learning about sprite creation and tilesets/tilemaps to create the first towers/levels.
 
+
+Summary of what was done: 
+My first two hours were spent thinking about the project's milestones and learning about how to use GitHub with Unity. I spent some time setting up the repo and informing my group members on
+how the repo is set up. The next two hours I spent looking at tutorials for how to use the Unity Editor and how to make some basic UI elements in the Unity Editor. My final two hours were spent
+researching how Unity uses sprites and tilesets/tilemaps to render graphics to the window. I also looked at programs that could be used to create art. Some of the programs I looked at included Clip
+Art Studio, Pixelorama, GIMP, and Krita. I am currently looking into scripting events in the UI, and I am also about to start working on some basic assets for the game.
