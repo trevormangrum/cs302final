@@ -1,6 +1,7 @@
 
 Nolan Askew
 GitHub: nolanaskew
+Repo: https://github.com/trevormangrum/cs302final
 
 Objectives for challenge: 
 1. Learn the basics of Unity and get some exposure to how scripting works
@@ -16,6 +17,8 @@ Project Rubric - 40 Points:
 25 - UI Design for project is implemented and compiles
 10 - Script is successfully added to an entity and compiles
 5 - Code formatting, commenting
+
+I thought this challenge worked out really well because it made me start the project, which is usually the hardest part of large projects, and now I know the basics of Unity and can think about how I want to implement the project.
 
 Timelog
 10/18/21: 2 hours -- worked in lab to create milestones and a sample object 
