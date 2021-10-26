@@ -17,6 +17,8 @@ public class Enemy : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) {
             rb.AddForce(Vector3.right * 500);
         }
+
+        //rb.velocity = Vector3.forward * 20f;
         
     }
 }
