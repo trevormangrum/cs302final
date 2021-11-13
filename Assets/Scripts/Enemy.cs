@@ -4,21 +4,32 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    Rigidbody2D rb;
+    public float moveSpeed = 1.0f;
+    public GameObject[] waypoints;
+    Transform t;
+    SpriteRenderer sr;
+    Vector3 target;
+    private int waypointIndex;
+
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        waypointIndex = 0;
+        t = GetComponent<Transform>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            rb.AddForce(Vector3.right * 500);
+        if(waypointIndex < waypoints.Length) {
+            target = waypoints[waypointIndex].GetComponent<Transform>().position; 
+            t.position = Vector3.MoveTowards(t.position, target, moveSpeed * Time.deltaTime); 
+        } else {
+            Destroy(gameObject);
         }
-
-        //rb.velocity = Vector3.forward * 20f;
-        
+       if(t.position == target) {
+           waypointIndex++;
+       }
     }
 }
