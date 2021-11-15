@@ -1,0 +1,37 @@
+Final project
+Tower Defense
+Andrew Hines
+
+Milestones-
+1. Install Unity and clone git repo
+2. Using https://learn.unity.com/ learn how to navigate and use Unity
+3. Complete the Essential's tutorial and the 2d platformer teaching template
+4. Be able to display a bird's eye view map
+5. Be able to display a sprite over top of the map.
+
+
+Rubric
+5 Points- Install Unity and clone git repo
+15 Points- Follow along with Unity's teaching tutorials on their website to learn to use and navigate Unity
+20 Points- Complete the Unity 2d platformer practice template
+
+
+Time Log:   
+Date:           Task                        Time          Hours           Total Time
+10/15/2021      Unity Essentials tutorial  3:20-4:20      1                1
+
+10/18/2021      Practice Template         3:30-5:00     1.5              2.5
+
+10/21/2021      Lego Template               4-4:30         .5                3
+
+10/22/2021      Advanced 2DTemplate      3:15-5:00     1.75              4.75
+
+10/26/2021 	Found Youtube playlist detailing Tower defense games in Unity. Watched and followed along with the first episodes                                     6:00-7:30      1.5               6.25
+
+10/28/2021  Followed alone with episode 3 2:00-3:15     1.25              7.5
+
+11/2/2021   Tried to convert map from 3d tutorial to 2d     
+					11:30-12:30  1                   8.5
+
+11/5/2021   Scratched the 3d tutorial, watched a 2d tutorial and followed along
+					   3:15-4:15      1                   9.5
