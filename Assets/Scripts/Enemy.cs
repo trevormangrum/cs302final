@@ -10,6 +10,17 @@ public class Enemy : MonoBehaviour
     SpriteRenderer sr;
     Vector3 target;
     private int waypointIndex;
+    private float enemyHp;
+    private int enemyDmg;//dmg enemy deals to gate
+    private int bounty;//gold recieved for killing enemy
+
+
+
+
+    private void Awake(){
+        allEnemies.enemies.Add(gameObject);
+    }
+
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +28,10 @@ public class Enemy : MonoBehaviour
         waypointIndex = 0;
         t = GetComponent<Transform>();
         sr = GetComponent<SpriteRenderer>();
+        
     }
+    
+
 
     // Update is called once per frame
     void Update()
@@ -31,5 +45,15 @@ public class Enemy : MonoBehaviour
        if(t.position == target) {
            waypointIndex++;
        }
+    }
+    public void takeDamage(float dmg){//takes dmg, dies if needed
+        enemyHp=enemyHp-dmg;
+        if(enemyHp<=0){
+            die();
+        }
+    }
+    private void die(){//handles the enemies death
+        allEnemies.enemies.Remove(gameObject);
+        Destroy(transform.gameObject);
     }
 }
