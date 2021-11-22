@@ -48,6 +48,7 @@ public class Enemy : MonoBehaviour
     }
     public void takeDamage(float dmg){//takes dmg, dies if needed
         enemyHp=enemyHp-dmg;
+        //die();
         if(enemyHp<=0){
             die();
         }

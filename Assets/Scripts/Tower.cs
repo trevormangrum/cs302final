@@ -38,6 +38,7 @@ public class Tower : MonoBehaviour
     }
     private void Update(){
         updateNearestEnemy();
+        //fire();
         if(Time.time>=nxtShot){
             if(currentTarget!=null){
                 fire();
