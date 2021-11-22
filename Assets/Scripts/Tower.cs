@@ -9,7 +9,7 @@ public class Tower : MonoBehaviour
     [SerializeField]private float damage;
     [SerializeField]private float attackspeed;//Time between shots (sec)
     private float nxtShot;
-    private GameObject currentTarget;
+    public GameObject currentTarget;
 
 
     private void Start(){
@@ -32,7 +32,7 @@ public class Tower : MonoBehaviour
             currentTarget=null;
         }
     }
-    private void fire(){
+    protected virtual void fire(){
         Enemy enemyScript=currentTarget.GetComponent<Enemy>();
         enemyScript.takeDamage(damage);
     }
