@@ -4,15 +4,13 @@ using UnityEngine;
 //inherits tower
 public class basicTower : Tower
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform pivot;
+    public Transform barrel;
+    public GameObject bullet;
+    protected override void fire()
     {
-        
-    }
+        base.fire();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameObject newBullet = Instantiate(bullet,barrel.position,pivot.rotation);
     }
 }

@@ -27,3 +27,7 @@ Timelog
 	  2 hours -- created the UI for the main menu and had it connect to a level scene that has a sphere that moves when spacebar it pressed
 10/26/21: 1.5 hours -- created a pause menu and linked level select buttons
 10/31/21: .5 hours -- scaled everything to fit the size of the screen
+11/11/21: 1 hour -- watched a tutorial for a 2D tower defense game in Unity
+11/19/21: .5 hours -- learned and messed around with tower scripts
+11/20/21: .5 hours -- created basic level UI
+11/22/21: 2 hours -- gave towers a graphic and bullets and have them shoot at the enemies
