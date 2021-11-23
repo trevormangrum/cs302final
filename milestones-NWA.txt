@@ -31,3 +31,4 @@ Timelog
 11/19/21: .5 hours -- learned and messed around with tower scripts
 11/20/21: .5 hours -- created basic level UI
 11/22/21: 2 hours -- gave towers a graphic and bullets and have them shoot at the enemies
+11/22/21: 1 hour -- made towers placable
