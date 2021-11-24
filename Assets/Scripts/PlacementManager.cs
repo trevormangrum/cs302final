@@ -5,7 +5,9 @@ using UnityEngine;
 // TODO: figure out how to allow the tower to be placed
 public class PlacementManager : MonoBehaviour
 {
+    public ShopManager shopManager;
     public GameObject basicTowerObject;
+    private GameObject currentTowerPlacing;
     private GameObject dummyPlacement;
     private Vector2 hoverPos;
     public Camera cam;
@@ -13,7 +15,7 @@ public class PlacementManager : MonoBehaviour
 
     public void Start()
     {
-        StartBuilding();
+    
     }
     public void SetMousePosition()
     {
@@ -21,15 +23,24 @@ public class PlacementManager : MonoBehaviour
     }
     public void PlaceBuilding() 
     {
-        GameObject newTowerObject = Instantiate(basicTowerObject);
-        newTowerObject.transform.position = hoverPos;
-        EndBuilding();
+        if (shopManager.CanBuyTower(currentTowerPlacing))
+        {
+            GameObject newTowerObject = Instantiate(currentTowerPlacing);
+            newTowerObject.transform.position = hoverPos;
+            EndBuilding();
+            shopManager.BuyTower(currentTowerPlacing);
+        }
+        else 
+        {
+            Debug.Log("Not enough money. Cannot buy tower");
+        }
+        
     }
-    public void StartBuilding()
+    public void StartBuilding(GameObject towerToBuild)
     {
         isBuilding = true;
-
-        dummyPlacement = Instantiate(basicTowerObject);
+        currentTowerPlacing = towerToBuild;
+        dummyPlacement = Instantiate(currentTowerPlacing);
 
         if (dummyPlacement.GetComponent<Tower>() != null)
         {
