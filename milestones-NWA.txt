@@ -32,3 +32,5 @@ Timelog
 11/20/21: .5 hours -- created basic level UI
 11/22/21: 2 hours -- gave towers a graphic and bullets and have them shoot at the enemies
 11/22/21: 1 hour -- made towers placable
+11/24/21: .5 hours -- added shop manager and made UI work
+11/24/21: 1 hour -- fixed towers placed by UI and attempted to add money when enemy is killed

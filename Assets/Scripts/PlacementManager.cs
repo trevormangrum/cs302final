@@ -5,7 +5,9 @@ using UnityEngine;
 // TODO: figure out how to allow the tower to be placed
 public class PlacementManager : MonoBehaviour
 {
+    public ShopManager shopManager;
     public GameObject basicTowerObject;
+    private GameObject currentTowerPlacing;
     private GameObject dummyPlacement;
     private Vector2 hoverPos;
     public Camera cam;
@@ -13,7 +15,6 @@ public class PlacementManager : MonoBehaviour
 
     public void Start()
     {
-        StartBuilding();
     }
     public void SetMousePosition()
     {
@@ -21,25 +22,35 @@ public class PlacementManager : MonoBehaviour
     }
     public void PlaceBuilding() 
     {
-        GameObject newTowerObject = Instantiate(basicTowerObject);
+        GameObject newTowerObject = Instantiate(currentTowerPlacing);
         newTowerObject.transform.position = hoverPos;
         EndBuilding();
+        shopManager.BuyTower(currentTowerPlacing);
+        
     }
-    public void StartBuilding()
+    public void StartBuilding(GameObject towerToBuild)
     {
-        isBuilding = true;
-
-        dummyPlacement = Instantiate(basicTowerObject);
-
-        if (dummyPlacement.GetComponent<Tower>() != null)
+        if (shopManager.CanBuyTower(currentTowerPlacing) == true)
         {
-            Destroy(dummyPlacement.GetComponent<Tower>());
-        }
+            isBuilding = true;
+            currentTowerPlacing = towerToBuild;
+            dummyPlacement = Instantiate(currentTowerPlacing);
 
-        if (dummyPlacement.GetComponent<BarrelRotation>() != null)
-        {
-            Destroy(dummyPlacement.GetComponent<BarrelRotation>());
+            if (dummyPlacement.GetComponent<Tower>() != null)
+            {
+                Destroy(dummyPlacement.GetComponent<Tower>());
+            }
+
+            if (dummyPlacement.GetComponent<BarrelRotation>() != null)
+            {
+                Destroy(dummyPlacement.GetComponent<BarrelRotation>());
+            }
         }
+        else 
+        {
+            Debug.Log("Not enough money. Cannot buy tower");
+        }
+        
     }
 
     public void EndBuilding()
