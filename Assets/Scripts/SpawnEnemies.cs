@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnEnemies : MonoBehaviour
 {
-    public Transform prefab;
+    public Transform[] prefabs;
     public GameObject[] waypoints;
     Transform t;
     // Start is called before the first frame update
@@ -17,7 +17,8 @@ public class SpawnEnemies : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space)) {
-            GameObject clone = Object.Instantiate(prefab, t).gameObject;
+            int carlToSpawn = Random.Range(0, prefabs.Length);
+            GameObject clone = Object.Instantiate(prefabs[carlToSpawn], t).gameObject;
             clone.GetComponent<Enemy>().waypoints = waypoints;
         }
     }
