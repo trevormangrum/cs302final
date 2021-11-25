@@ -1088,7 +1088,7 @@ MonoBehaviour:
         m_MethodName: StartBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 3582435608703677229, guid: b10c1aa56b5282a47bab887a3e3097f5, type: 3}
+          m_ObjectArgument: {fileID: 1495013157}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0

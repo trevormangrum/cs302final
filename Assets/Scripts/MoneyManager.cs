@@ -5,8 +5,8 @@ using UnityEngine;
 public class MoneyManager : MonoBehaviour
 {
     private int currentPlayerMoney;
-
     public int starterMoney;
+    public Enemy enemy;
 
     public void Start() 
     {
@@ -21,6 +21,7 @@ public class MoneyManager : MonoBehaviour
     public void AddMoney(int amount)
     {
         currentPlayerMoney += amount;
+        Debug.Log("Added " + amount + " to player's money! The player now has " + currentPlayerMoney);
     }
 
     public void RemoveMoney(int amount)

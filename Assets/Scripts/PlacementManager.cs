@@ -15,7 +15,6 @@ public class PlacementManager : MonoBehaviour
 
     public void Start()
     {
-    
     }
     public void SetMousePosition()
     {
@@ -23,34 +22,35 @@ public class PlacementManager : MonoBehaviour
     }
     public void PlaceBuilding() 
     {
-        if (shopManager.CanBuyTower(currentTowerPlacing))
+        GameObject newTowerObject = Instantiate(currentTowerPlacing);
+        newTowerObject.transform.position = hoverPos;
+        EndBuilding();
+        shopManager.BuyTower(currentTowerPlacing);
+        
+    }
+    public void StartBuilding(GameObject towerToBuild)
+    {
+        if (shopManager.CanBuyTower(currentTowerPlacing) == true)
         {
-            GameObject newTowerObject = Instantiate(currentTowerPlacing);
-            newTowerObject.transform.position = hoverPos;
-            EndBuilding();
-            shopManager.BuyTower(currentTowerPlacing);
+            isBuilding = true;
+            currentTowerPlacing = towerToBuild;
+            dummyPlacement = Instantiate(currentTowerPlacing);
+
+            if (dummyPlacement.GetComponent<Tower>() != null)
+            {
+                Destroy(dummyPlacement.GetComponent<Tower>());
+            }
+
+            if (dummyPlacement.GetComponent<BarrelRotation>() != null)
+            {
+                Destroy(dummyPlacement.GetComponent<BarrelRotation>());
+            }
         }
         else 
         {
             Debug.Log("Not enough money. Cannot buy tower");
         }
         
-    }
-    public void StartBuilding(GameObject towerToBuild)
-    {
-        isBuilding = true;
-        currentTowerPlacing = towerToBuild;
-        dummyPlacement = Instantiate(currentTowerPlacing);
-
-        if (dummyPlacement.GetComponent<Tower>() != null)
-        {
-            Destroy(dummyPlacement.GetComponent<Tower>());
-        }
-
-        if (dummyPlacement.GetComponent<BarrelRotation>() != null)
-        {
-            Destroy(dummyPlacement.GetComponent<BarrelRotation>());
-        }
     }
 
     public void EndBuilding()
