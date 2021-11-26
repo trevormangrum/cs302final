@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class WaveManager : MonoBehaviour
 {
+    public Wave[] waves;
+    private int remainingEnemies;
     // Start is called before the first frame update
-    public List<GameObject> waypoints;
     void Start()
     {
         
@@ -14,6 +15,9 @@ public class WaveManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        int currentWave = 0;
+        while(currentWave != waves.Length) {
+
+        }
     }
 }

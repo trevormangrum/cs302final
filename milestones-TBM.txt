@@ -44,6 +44,7 @@ Time Log (up until 10/22/2021):
 10/21/2021 -- 2 hrs -- Worked on learning the basics of the Unity Editor and created a basic Level Select UI.
 10/21/2021 -- 2 hrs -- Worked on learning about sprite creation and tilesets/tilemaps to create the first towers/levels.
 
+11/25/2021 -- 2 hrs -- Worked on adding multiple enemies and updating their sprites based on which direction they're facing.
 
 Summary of what was done: 
 My first two hours were spent thinking about the project's milestones and learning about how to use GitHub with Unity. I spent some time setting up the repo and informing my group members on
