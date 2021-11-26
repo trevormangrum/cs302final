@@ -6013,7 +6013,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412894508}
-  - component: {fileID: 1412894507}
+  - component: {fileID: 1412894509}
   m_Layer: 0
   m_Name: Spawnpoint
   m_TagString: Untagged
@@ -6021,31 +6021,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1412894507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412894506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d10cb881820ae542ab203465cd04591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabs:
-  - {fileID: 514247777593760888, guid: e760c559de607dd4faadfdfcc37a3798, type: 3}
-  - {fileID: 7220856125094092781, guid: 38e88686920c0744694fd64310eb8d05, type: 3}
-  - {fileID: 8910857348140872807, guid: 24ca2235daa3db744995e970eabd13e1, type: 3}
-  - {fileID: 8049590720303640041, guid: eb22f8fd0819b3742b7f0aa0a65ea6c4, type: 3}
-  waypoints:
-  - {fileID: 2016935959}
-  - {fileID: 608596139}
-  - {fileID: 149942632}
-  - {fileID: 693084903}
-  - {fileID: 1431715339}
-  - {fileID: 543844438}
-  - {fileID: 804907167}
 --- !u!4 &1412894508
 Transform:
   m_ObjectHideFlags: 0
@@ -6060,6 +6035,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1412894509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412894506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c0d941563e24e4cae1d03662cc3aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 2016935959}
+  - {fileID: 608596139}
+  - {fileID: 149942632}
+  - {fileID: 693084903}
+  - {fileID: 1431715339}
+  - {fileID: 543844438}
+  - {fileID: 804907167}
+  waves:
+  - {fileID: 2477718594091855688, guid: 2754bea7ffe40504f9c78536c20b1656, type: 3}
+  - {fileID: 8483986198903334720, guid: cb96280b04a441b4abf12f0cd93dce75, type: 3}
 --- !u!1001 &1421464379
 PrefabInstance:
   m_ObjectHideFlags: 0

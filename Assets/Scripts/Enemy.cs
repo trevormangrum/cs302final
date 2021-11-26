@@ -43,25 +43,21 @@ public class Enemy : MonoBehaviour
             float angle = AngleBetweenVector3(t.position, target);
             if (angle >= 45 && angle < 135)
                 {
-                    Debug.Log("Going up!");
                     sr.sprite = sprites[1];
                 }
                 else if (angle >= 135 || angle < -135)
                 {
                     //left
-                    Debug.Log("Going left!");
                     sr.sprite = sprites[2];
                 }
                 else if (angle >= -135 && angle < -45)
                 {
                     //down
-                    Debug.Log("Going down!");
                     sr.sprite = sprites[0];
                 }
                 else if (angle >= -45 && angle < 45)
                 {
                     //right
-                    Debug.Log("Going right!");
                     sr.sprite = sprites[3];
                 }
                 

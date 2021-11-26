@@ -2,18 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-[System.Serializable]
-public class Wave 
+public class Wave : MonoBehaviour
 {
     [System.Serializable]
     public struct EnemyData {
-        //Prefab of enemy to spawn.
         [SerializeField]
-        public Transform enemy; 
-        //Amount of enemies
+        public Transform prefab;
         [SerializeField]
         public int amount;
     }
-    public List<EnemyData> enemyData;
+
+    public EnemyData[] waveInfo;
 }
