@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7220856125094092781}
   - component: {fileID: 3091478586977314303}
   - component: {fileID: -6836557867483243923}
+  - component: {fileID: 6889614796672455973}
   m_Layer: 0
   m_Name: Blue Carl
   m_TagString: Enemy
@@ -103,3 +104,29 @@ MonoBehaviour:
   - {fileID: -5431966209374820044, guid: 6adfae900f2341147a4de271b9613d37, type: 3}
   - {fileID: -2868188257930523727, guid: 6adfae900f2341147a4de271b9613d37, type: 3}
   - {fileID: -3434362626164602288, guid: 6adfae900f2341147a4de271b9613d37, type: 3}
+--- !u!61 &6889614796672455973
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559194868425661429}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
