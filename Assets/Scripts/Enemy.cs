@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Enemy : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class Enemy : MonoBehaviour
 
     private void Awake(){
         allEnemies.enemies.Add(gameObject);
+        allEnemies.speeds.Add(moveSpeed);
     }
 
 
@@ -43,11 +45,13 @@ public class Enemy : MonoBehaviour
             float angle = AngleBetweenVector3(t.position, target);
             if (angle >= 45 && angle < 135)
                 {
+
                     sr.sprite = sprites[1];
                 }
                 else if (angle >= 135 || angle < -135)
                 {
                     //left
+
                     sr.sprite = sprites[2];
                 }
                 else if (angle >= -135 && angle < -45)
@@ -80,6 +84,7 @@ public class Enemy : MonoBehaviour
     private void die(){
         //handles the enemies death
         allEnemies.enemies.Remove(gameObject);
+        allEnemies.speeds.Remove(moveSpeed);
         Destroy(transform.gameObject);
     }
 
@@ -87,5 +92,10 @@ public class Enemy : MonoBehaviour
         Vector3 diff = vec2 - vec1;
         float sign = (vec2.y < vec1.y) ? -1.0f : 1.0f;
         return Vector3.Angle(Vector3.right, diff) * sign;
+    }
+    
+    public float GetSpeed()
+    {
+        return moveSpeed;
     }
 }

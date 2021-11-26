@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// TODO: figure out how to allow the tower to be placed
+//Credit to ZeveonHD for a helpful tutorial to write this script
 public class PlacementManager : MonoBehaviour
 {
     public ShopManager shopManager;
