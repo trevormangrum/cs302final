@@ -6,4 +6,7 @@ public class allEnemies : MonoBehaviour
 {
     public static List<GameObject> enemies=new List<GameObject>();
     public static List<float> speeds = new List<float>();
+
+
+    
 }

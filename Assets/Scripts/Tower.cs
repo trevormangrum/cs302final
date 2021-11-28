@@ -16,7 +16,7 @@ public class Tower : MonoBehaviour
         nxtShot=Time.time;
     }
     private void updateNearestEnemy(){
-        /*
+        
         GameObject currentNearestEnemy=null;
         float distance=Mathf.Infinity;
         foreach(GameObject enemy in allEnemies.enemies){
@@ -32,7 +32,8 @@ public class Tower : MonoBehaviour
         else{
             currentTarget=null;
         }
-        */
+        
+        /*
         if (allEnemies.speeds.Count != 0) {
             allEnemies.speeds.Sort();
             for (int i = 0; i < allEnemies.enemies.Count; i++) 
@@ -48,6 +49,7 @@ public class Tower : MonoBehaviour
         }
         else
             currentTarget = null;
+        */
     }
     protected virtual void fire(){
         Enemy enemyScript=currentTarget.GetComponent<Enemy>();

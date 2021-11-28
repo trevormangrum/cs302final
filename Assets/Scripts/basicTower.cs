@@ -10,7 +10,6 @@ public class basicTower : Tower
     protected override void fire()
     {
         base.fire();
-
         GameObject newBullet = Instantiate(bullet,barrel.position,pivot.rotation);
     }
 }
