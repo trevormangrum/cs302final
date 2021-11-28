@@ -22,6 +22,7 @@ public class Enemy : MonoBehaviour
     private void Awake(){
         allEnemies.enemies.Add(gameObject);
         allEnemies.speeds.Add(moveSpeed);
+        allEnemies.numEnemies++;
     }
 
 
@@ -86,6 +87,7 @@ public class Enemy : MonoBehaviour
         allEnemies.enemies.Remove(gameObject);
         allEnemies.speeds.Remove(moveSpeed);
         Destroy(transform.gameObject);
+        allEnemies.numEnemies--;
     }
 
     private float AngleBetweenVector3(Vector3 vec1, Vector3 vec2) {
