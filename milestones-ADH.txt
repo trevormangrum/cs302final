@@ -1,0 +1,103 @@
+Final project
+Tower Defense
+Andrew Hines
+
+github link https://github.com/trevormangrum/cs302final
+
+
+
+Milestones-
+1. Install Unity and clone git repo
+2. Using https://learn.unity.com/ learn how to navigate and use Unity
+3. Complete the Essential's tutorial and the 2d platformer teaching template
+
+
+
+Rubric
+5 Points- Install Unity and clone git repo
+15 Points- Follow along with Unity's teaching tutorials on their website to learn to use and navigate Unity
+20 Points- Complete the Unity 2d platformer practice template
+
+
+Time Log:               
+10/15/2021      Unity Essentials tutorial                                                                                                            3:20-4:20     1                 1
+10/18/2021      Practice Template                                                                                                                    3:30-5:00     1.5               2.5
+10/21/2021      Lego Template                                                                                                                        4-4:30         .5               3
+10/22/2021      Advanced 2DTemplate                                                                                                                  3:15-5:00     1.75              4.75
+10/26/2021 	Found Youtube playlist detailing Tower defense games in Unity. Watched and followed along with the first episodes                    6:00-7:30     1.5               6.25
+10/28/2021      Followed alone with episode 3                                                                                                        2:00-3:15     1.25              7.5
+11/2/2021       Tried to convert map from 3d tutorial to 2d                                                                                          11:30-12:30   1                 8.5
+11/5/2021       Scratched the 3d tutorial, watched a 2d tutorial and followed along                                                                  3:15-4:15     1                 9.5
+
+11/26/2021      Continued work on multiple tower targetting types,                                                                                   12:00-2:00    2                 11.5
+11/28/2021      Continued work on multiple tower targetting types, found and fixed push issue in my repo that has been around since the beginning    4:00-6:00     2                 13.5
+11/28/2021      Art Work to make towers looks better/add faces                                                                                       6:00-
+
+
+Report: I have had issues trying to add a branch to github, I think I need to set up my repo better on my machine
+I'm asking my group members if they have any suggestions. I'll have it fully uploaded to the repo hopefully by the time you grade this assignment. I spent much more
+time than I wanted watching videos to learn unity, but after doing the 2D platformer template and the Lego template
+I feel very comfortable using it's UI. WHile doing the advanced 2D template I have learned a lot but still need
+to learn a little more before I'm comfortable using Unity outside of the basic UI (scene game investigator window)
+
+
+
+
+
+
+
+
+
+
+
+Ask about speed targetting
+setup each tower type to inherit and only overide the curr target function
+
+Darwin-targets weakest
+Lingbergh- Targets flying
+Dickens- targets with low gold reward
+sheen-target random but deals double damage
+
+why not just use one list and do enemies.data
+
+Basic- 
+Darwin-targets highest dmg
+Lingbergh- Targets flying
+Sheen-target random but deals double damage
+
+
+Add distance check to speed function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

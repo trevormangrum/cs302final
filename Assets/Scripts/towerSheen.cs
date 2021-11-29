@@ -1,0 +1,40 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+//inherits tower
+//This tower type deals 2x damage and targets random enemies
+public class towerSheen : Tower
+{
+    public Transform pivot;
+    public Transform barrel;
+    public GameObject bullet;
+    
+    protected override void fire()
+    {
+        
+        base.fire();
+        GameObject newBullet = Instantiate(bullet,barrel.position,pivot.rotation);
+    }
+    
+    protected override void updateCurrTarget(){
+        GameObject newTarget=null;
+        float distance=Mathf.Infinity;
+        var rand=new System.Random();
+        int randIndex;
+        if(allEnemies.numEnemies!=0){
+            while(newTarget==null){
+                randIndex=rand.Next(allEnemies.numEnemies);
+                newTarget=allEnemies.enemies[randIndex];
+                currentTarget=newTarget;
+                distance=(transform.position-newTarget.transform.position).magnitude;
+                if(distance<=range){//if within range
+                currentTarget=newTarget;
+                }
+                else{
+                    currentTarget=null;
+                }
+            }
+        }
+        newTarget=null;
+    }
+}

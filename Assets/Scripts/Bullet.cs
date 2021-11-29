@@ -14,6 +14,7 @@ public class Bullet : MonoBehaviour
     {
         // delete bullet on collision 
         Destroy(gameObject);
+        
     }
     // Update is called once per frame
     void Update()

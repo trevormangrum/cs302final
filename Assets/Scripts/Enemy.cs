@@ -16,12 +16,14 @@ public class Enemy : MonoBehaviour
     private float enemyHp;
     private int enemyDmg;//dmg enemy deals to gate
     private int bounty;//gold recieved for killing enemy
+    private bool flying;
 
 
 
     private void Awake(){
         allEnemies.enemies.Add(gameObject);
         allEnemies.speeds.Add(moveSpeed);
+        allEnemies.numEnemies++;
     }
 
 
@@ -86,6 +88,7 @@ public class Enemy : MonoBehaviour
         allEnemies.enemies.Remove(gameObject);
         allEnemies.speeds.Remove(moveSpeed);
         Destroy(transform.gameObject);
+        allEnemies.numEnemies--;
     }
 
     private float AngleBetweenVector3(Vector3 vec1, Vector3 vec2) {
@@ -97,5 +100,14 @@ public class Enemy : MonoBehaviour
     public float GetSpeed()
     {
         return moveSpeed;
+    }
+    public bool HasFlying(){
+        return flying;
+    }
+    public int getDmg(){
+        return enemyDmg;
+    }
+    public int getBounty(){
+        return bounty;
     }
 }
