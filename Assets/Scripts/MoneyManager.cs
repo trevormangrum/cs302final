@@ -7,13 +7,6 @@ public class MoneyManager : MonoBehaviour
 {
     public Text playerMoneyText;
     public int currentPlayerMoney;
-    public int starterMoney;
-    public Enemy enemy;
-
-    public void Start() 
-    {
-        currentPlayerMoney = starterMoney;
-    }
 
     public int GetCurrentMoney()
     {
