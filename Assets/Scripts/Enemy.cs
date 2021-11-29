@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     private float enemyHp;
     private int enemyDmg;//dmg enemy deals to gate
     private int bounty;//gold recieved for killing enemy
+    private bool flying;
 
 
 
@@ -99,5 +100,11 @@ public class Enemy : MonoBehaviour
     public float GetSpeed()
     {
         return moveSpeed;
+    }
+    public bool HasFlying(){
+        return flying;
+    }
+    public int getDmg(){
+        return enemyDmg;
     }
 }
