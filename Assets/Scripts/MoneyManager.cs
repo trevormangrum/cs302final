@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MoneyManager : MonoBehaviour
 {
     public Text playerMoneyText;
-    private int currentPlayerMoney;
+    public int currentPlayerMoney;
     public int starterMoney;
     public Enemy enemy;
 
