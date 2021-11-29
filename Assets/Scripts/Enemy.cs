@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     private int waypointIndex;
     private float enemyHp;
     private int enemyDmg;//dmg enemy deals to gate
-    private int bounty;//gold recieved for killing enemy
+    public int bounty;//gold recieved for killing enemy
     private bool flying;
 
 
@@ -70,6 +70,10 @@ public class Enemy : MonoBehaviour
         } else {
             if(gameObject) {
                 Destroy(gameObject);
+                GameObject wm = GameObject.FindWithTag("WaveManager");
+                wm.GetComponent<WaveManager>().killCounter++;
+                GameObject mm = GameObject.FindWithTag("MoneyManager");
+                mm.GetComponent<MoneyManager>().currentPlayerMoney += bounty;
             }
         }
        if(t.position == target) {
@@ -89,6 +93,10 @@ public class Enemy : MonoBehaviour
         allEnemies.speeds.Remove(moveSpeed);
         Destroy(transform.gameObject);
         allEnemies.numEnemies--;
+        GameObject wm = GameObject.FindWithTag("WaveManager");
+        wm.GetComponent<WaveManager>().killCounter++;
+        GameObject mm = GameObject.FindWithTag("MoneyManager");
+        mm.GetComponent<MoneyManager>().currentPlayerMoney += bounty;
     }
 
     private float AngleBetweenVector3(Vector3 vec1, Vector3 vec2) {

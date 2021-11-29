@@ -6933,62 +6933,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359573220}
   m_CullTransparentMesh: 1
---- !u!1 &1412894506
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1412894508}
-  - component: {fileID: 1412894509}
-  m_Layer: 0
-  m_Name: Spawnpoint
-  m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1412894508
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412894506}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.45, y: 0.52, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1412894509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412894506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81c0d941563e24e4cae1d03662cc3aba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roundNum: 0
-  roundText: {fileID: 0}
-  waypoints:
-  - {fileID: 2016935959}
-  - {fileID: 608596139}
-  - {fileID: 149942632}
-  - {fileID: 693084903}
-  - {fileID: 1431715339}
-  - {fileID: 543844438}
-  - {fileID: 804907167}
-  waves:
-  - {fileID: 2477718594091855688, guid: 2754bea7ffe40504f9c78536c20b1656, type: 3}
-  - {fileID: 8483986198903334720, guid: cb96280b04a441b4abf12f0cd93dce75, type: 3}
 --- !u!1001 &1421464379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7119,7 +7063,7 @@ GameObject:
   - component: {fileID: 1492406808}
   m_Layer: 0
   m_Name: MoneyManager
-  m_TagString: Untagged
+  m_TagString: MoneyManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7137,6 +7081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoneyText: {fileID: 764641724}
+  currentPlayerMoney: 0
   starterMoney: 1000
   enemy: {fileID: 0}
 --- !u!4 &1492406809
@@ -8266,6 +8211,91 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125010900}
   m_CullTransparentMesh: 1
+--- !u!1001 &769920598989962830
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 769920600402194786, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 769920600402194786, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 769920600402194786, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 769920600402194786, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 769920600402194786, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 769920600402194786, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 769920600402194786, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 769920600402194786, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 769920600402194786, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 769920600402194786, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 769920600402194786, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 769920600402194787, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 2016935959}
+    - target: {fileID: 769920600402194787, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 608596139}
+    - target: {fileID: 769920600402194787, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: waypoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 149942632}
+    - target: {fileID: 769920600402194787, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: waypoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 693084903}
+    - target: {fileID: 769920600402194787, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: waypoints.Array.data[4]
+      value: 
+      objectReference: {fileID: 1431715339}
+    - target: {fileID: 769920600402194787, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: waypoints.Array.data[5]
+      value: 
+      objectReference: {fileID: 543844438}
+    - target: {fileID: 769920600402194787, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: waypoints.Array.data[6]
+      value: 
+      objectReference: {fileID: 804907167}
+    - target: {fileID: 769920600402194788, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
+      propertyPath: m_Name
+      value: Spawnpoint
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b7396fadace5cc04aad3795c5dc0e8f7, type: 3}
 --- !u!1001 &4337090705124919907
 PrefabInstance:
   m_ObjectHideFlags: 0
