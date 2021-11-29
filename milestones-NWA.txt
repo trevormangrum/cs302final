@@ -36,3 +36,5 @@ Timelog
 11/24/21: 1 hour -- fixed towers placed by UI and attempted to add money when enemy is killed
 11/26/21: 1 hour -- made algorithm for tower to target enemy with the highest speed
 11/28/21: 1.5 hours -- made towers not placable on path, displayed player money, made new tasks
+11/28/21: .5 hours -- met with team to discuss final additions to project
+11/28/21: 1.5 hours -- created topbar, indicators, and info panel

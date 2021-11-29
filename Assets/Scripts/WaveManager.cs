@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveManager : MonoBehaviour
 {
+    public int roundNum = 0;
+    public Text roundText;
+    GameObject RoundText;
     public GameObject[] waypoints;
     Transform t;
     public Wave[] waves;
@@ -12,6 +16,8 @@ public class WaveManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        RoundText = GameObject.Find("RoundText"); 
+        roundText = RoundText.GetComponent<Text>();
         t = GetComponent<Transform>();
         waveInProgress = false;
     }
@@ -19,6 +25,7 @@ public class WaveManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        roundText.text = "Round " + roundNum.ToString();
         if(currentWave != waves.Length) {
             //Update what wave needs to be accessed when a wave is over.
             if(GameObject.FindObjectOfType<Enemy>() == null && waveInProgress) {
@@ -28,6 +35,7 @@ public class WaveManager : MonoBehaviour
                 if(!waveInProgress && Input.GetKeyDown(KeyCode.Space)) {
                     //If there's no wave in progress and the user presses space,
                     //A new wave will spawn
+                    roundNum++;
                     StartCoroutine(SpawnWave(waves[currentWave]));
                     waveInProgress = true;
                 }
