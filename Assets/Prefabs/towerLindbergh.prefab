@@ -105,7 +105,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a6075273f4952cb459b0a9db12cd6df1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3ca038d6f62abe3409dc2520665dfb72, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7982a2d67dd1db3429282d01b89e5d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 1
+  range: 5
   damage: 25
   attackspeed: 1
   currentTarget: {fileID: 0}
@@ -222,7 +222,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
+  m_Color: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
