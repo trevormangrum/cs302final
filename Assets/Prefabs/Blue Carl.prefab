@@ -104,7 +104,9 @@ MonoBehaviour:
   - {fileID: -5431966209374820044, guid: 6adfae900f2341147a4de271b9613d37, type: 3}
   - {fileID: -2868188257930523727, guid: 6adfae900f2341147a4de271b9613d37, type: 3}
   - {fileID: -3434362626164602288, guid: 6adfae900f2341147a4de271b9613d37, type: 3}
+  enemyDmg: 2
   bounty: 20
+  flying: 0
 --- !u!61 &6889614796672455973
 BoxCollider2D:
   m_ObjectHideFlags: 0

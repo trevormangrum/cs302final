@@ -14,9 +14,9 @@ public class Enemy : MonoBehaviour
     Vector3 target;
     private int waypointIndex;
     private float enemyHp;
-    private int enemyDmg;//dmg enemy deals to gate
+    public int enemyDmg;//dmg enemy deals to gate
     public int bounty;//gold recieved for killing enemy
-    private bool flying;
+    public bool flying;
 
 
 
@@ -45,9 +45,10 @@ public class Enemy : MonoBehaviour
             target = waypoints[waypointIndex].GetComponent<Transform>().position; 
             t.position = Vector3.MoveTowards(t.position, target, moveSpeed * Time.deltaTime); 
             float angle = AngleBetweenVector3(t.position, target);
+            //Update the enemy sprite based on which direction the enemy is facing.
             if (angle >= 45 && angle < 135)
                 {
-
+                    //up
                     sr.sprite = sprites[1];
                 }
                 else if (angle >= 135 || angle < -135)
@@ -68,12 +69,19 @@ public class Enemy : MonoBehaviour
                 }
                 
         } else {
+            Debug.Log("HERE!");
             if(gameObject) {
+                allEnemies.enemies.Remove(gameObject);
+                allEnemies.speeds.Remove(moveSpeed);
                 Destroy(gameObject);
+                allEnemies.numEnemies--;
+                //Updates how many enemies have died/made it through in the wave manager
+                //This lets the wave manager know when to start the next wave.
                 GameObject wm = GameObject.FindWithTag("WaveManager");
                 wm.GetComponent<WaveManager>().killCounter++;
-                GameObject mm = GameObject.FindWithTag("MoneyManager");
-                mm.GetComponent<MoneyManager>().currentPlayerMoney += bounty;
+                //Remove lives from the player if an enemy makes it to the end.
+                GameObject hm = GameObject.FindWithTag("HealthManager");
+                hm.GetComponent<HealthManager>().lives -= enemyDmg;
             }
         }
        if(t.position == target) {
@@ -95,6 +103,7 @@ public class Enemy : MonoBehaviour
         allEnemies.numEnemies--;
         GameObject wm = GameObject.FindWithTag("WaveManager");
         wm.GetComponent<WaveManager>().killCounter++;
+        //Give the player money for killing enemies
         GameObject mm = GameObject.FindWithTag("MoneyManager");
         mm.GetComponent<MoneyManager>().currentPlayerMoney += bounty;
     }
