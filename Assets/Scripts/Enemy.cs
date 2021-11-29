@@ -107,4 +107,7 @@ public class Enemy : MonoBehaviour
     public int getDmg(){
         return enemyDmg;
     }
+    public int getBounty(){
+        return bounty;
+    }
 }

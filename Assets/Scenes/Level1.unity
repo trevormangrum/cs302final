@@ -679,6 +679,94 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377650957}
   m_CullTransparentMesh: 1
+--- !u!1001 &380317724
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 88203680261335601, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 88203680261335601, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 88203680261335601, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 88203680261335601, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.6347
+      objectReference: {fileID: 0}
+    - target: {fileID: 88203680261335601, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 88203680261335601, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 88203680261335601, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 88203680261335601, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 88203680261335601, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 88203680261335601, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 88203680261335601, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582435608703677229, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: m_Name
+      value: towerDickens
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091434612862880259, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091434612862880259, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 2024740}
+    - target: {fileID: 4091434612862880259, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: damage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091434612862880259, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: attackspeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922768907104086074, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+      propertyPath: tower
+      value: 
+      objectReference: {fileID: 380317725}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+--- !u!114 &380317725 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4091434612862880259, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
+  m_PrefabInstance: {fileID: 380317724}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45492d65428a9543b2a4061e676cb1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &543844438
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,7 +993,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -9026926830534977966, guid: 5923d2832d9eeef4497c041bd910b47b, type: 3}
       propertyPath: range
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -9026926830534977966, guid: 5923d2832d9eeef4497c041bd910b47b, type: 3}
       propertyPath: bullet
@@ -7011,7 +7099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5185221892283000955, guid: e334f5cc71375b940bb1b2980588eab2, type: 3}
       propertyPath: range
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5185221892283000955, guid: e334f5cc71375b940bb1b2980588eab2, type: 3}
       propertyPath: bullet

@@ -41,7 +41,6 @@ GameObject:
   m_Component:
   - component: {fileID: 88203680261335601}
   - component: {fileID: 3356947816166453220}
-  - component: {fileID: 5037112886890755434}
   - component: {fileID: -9026926830534977966}
   - component: {fileID: 6922768907104086074}
   m_Layer: 0
@@ -117,25 +116,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5037112886890755434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3582435608703677229}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 271dd1fb860532749b07c27426b0adca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 5
-  damage: 25
-  attackspeed: 1
-  currentTarget: {fileID: 0}
-  pivot: {fileID: 9149492258429497897}
-  barrel: {fileID: 3044066454413303776}
-  bullet: {fileID: 5479740670521644450, guid: b86d88512d24d1344bd72157262e3888, type: 3}
 --- !u!114 &-9026926830534977966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,9 +128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7982a2d67dd1db3429282d01b89e5d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 0
-  damage: 0
-  attackspeed: 0
+  range: 1
+  damage: 25
+  attackspeed: 1
   currentTarget: {fileID: 0}
   pivot: {fileID: 9149492258429497897}
   barrel: {fileID: 3044066454413303776}
@@ -169,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pivot: {fileID: 9149492258429497897}
   barrel: {fileID: 3044066454413303776}
-  tower: {fileID: 5037112886890755434}
+  tower: {fileID: 0}
 --- !u!1 &6931845896095554486
 GameObject:
   m_ObjectHideFlags: 0
