@@ -29,8 +29,9 @@ Time Log:
 11/2/2021       Tried to convert map from 3d tutorial to 2d                                                                                          11:30-12:30   1                 8.5
 11/5/2021       Scratched the 3d tutorial, watched a 2d tutorial and followed along                                                                  3:15-4:15     1                 9.5
 
-
-11/28/2021      Continued work on multiple tower targetting types
+11/26/2021      Continued work on multiple tower targetting types,                                                                                   12:00-2:00    2                 11.5
+11/28/2021      Continued work on multiple tower targetting types, found and fixed push issue in my repo that has been around since the beginning    4:00-6:00     2                 13.5
+11/28/2021      Art Work to make towers looks better/add faces                                                                                       6:00-
 
 
 Report: I have had issues trying to add a branch to github, I think I need to set up my repo better on my machine
@@ -38,3 +39,65 @@ I'm asking my group members if they have any suggestions. I'll have it fully upl
 time than I wanted watching videos to learn unity, but after doing the 2D platformer template and the Lego template
 I feel very comfortable using it's UI. WHile doing the advanced 2D template I have learned a lot but still need
 to learn a little more before I'm comfortable using Unity outside of the basic UI (scene game investigator window)
+
+
+
+
+
+
+
+
+
+
+
+Ask about speed targetting
+setup each tower type to inherit and only overide the curr target function
+
+Darwin-targets weakest
+Lingbergh- Targets flying
+Dickens- targets with low gold reward
+sheen-target random but deals double damage
+
+why not just use one list and do enemies.data
+
+Basic- 
+Darwin-targets highest dmg
+Lingbergh- Targets flying
+Sheen-target random but deals double damage
+
+
+Add distance check to speed function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
