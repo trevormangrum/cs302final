@@ -34,6 +34,6 @@ public class MoneyManager : MonoBehaviour
 
     public void Update() 
     {
-        playerMoneyText.text = "$ " + currentPlayerMoney.ToString();
+        playerMoneyText.text = currentPlayerMoney.ToString();
     }
 }
