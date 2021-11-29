@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//Shoots the furthest alone unit, prioritizing units with flying
-public class towerLindberg : Tower
+//Shoots the closest unit, prioritizing units with flying
+public class towerLindbergh : Tower
 {
     public Transform pivot;
     public Transform barrel;
