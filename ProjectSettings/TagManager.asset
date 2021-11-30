@@ -9,6 +9,7 @@ TagManager:
   - WaveManager
   - MoneyManager
   - HealthManager
+  - Bullet
   layers:
   - Default
   - TransparentFX

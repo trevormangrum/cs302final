@@ -9,8 +9,6 @@ public class towerDarwin : Tower
     public Transform pivot;
     public Transform barrel;
     public GameObject bullet;
-    public Text rangeText;
-    public Text attackText;
     protected override void fire()
     {
         base.fire();
@@ -18,8 +16,8 @@ public class towerDarwin : Tower
     }
     protected override void updateCurrTarget(){
         float distance;
-        
         foreach(GameObject enemy in allEnemies.enemies){
+            Debug.Log("in darwin loop");
             Enemy enemyScript=enemy.GetComponent<Enemy>();
             distance=(transform.position-enemy.transform.position).magnitude;
             if((distance<=range) && (!enemyScript.HasFlying())  ){//within range and not flying
@@ -36,11 +34,5 @@ public class towerDarwin : Tower
                 currentTarget=null;
             }
         }
-    }
-
-    public void Update() 
-    {
-        rangeText.text = "Range: " + range.ToString();
-        attackText.text = "Damage: " + damage.ToString();
     }
 }
