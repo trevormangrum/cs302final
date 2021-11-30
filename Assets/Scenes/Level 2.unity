@@ -752,7 +752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealthText: {fileID: 548338741}
   gameOverMenu: {fileID: 1570045970}
-  lives: 100
+  lives: 15
 --- !u!4 &207917685
 Transform:
   m_ObjectHideFlags: 0
@@ -11054,7 +11054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoneyText: {fileID: 106740025}
-  currentPlayerMoney: 1000
+  currentPlayerMoney: 400
 --- !u!4 &1932526524
 Transform:
   m_ObjectHideFlags: 0

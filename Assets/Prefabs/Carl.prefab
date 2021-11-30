@@ -111,7 +111,7 @@ MonoBehaviour:
   - {fileID: -8900738216180584181, guid: 6adfae900f2341147a4de271b9613d37, type: 3}
   - {fileID: -1653020310355811883, guid: 6adfae900f2341147a4de271b9613d37, type: 3}
   - {fileID: -8727996014940003494, guid: 6adfae900f2341147a4de271b9613d37, type: 3}
-  enemyHp: 100
+  enemyHp: 30
   enemyDmg: 1
   bounty: 10
   flying: 0

@@ -130,8 +130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 5
-  damage: 50
-  attackspeed: 2
+  damage: 100
+  attackspeed: 2.5
   currentTarget: {fileID: 0}
   pivot: {fileID: 9149492258429497897}
   barrel: {fileID: 3044066454413303776}

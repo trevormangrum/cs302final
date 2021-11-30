@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     public Sprite[] sprites;
     Vector3 target;
     private int waypointIndex;
-    public float enemyHp=100;
+    public float enemyHp;
     public int enemyDmg;//dmg enemy deals to gate
     public int bounty;//gold recieved for killing enemy
     public bool flying;
