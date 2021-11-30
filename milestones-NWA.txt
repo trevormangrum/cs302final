@@ -39,3 +39,4 @@ Timelog
 11/28/21: .5 hours -- met with team to discuss final additions to project
 11/28/21: 1.5 hours -- created topbar, indicators, and info panel
 11/29/21: 2 hours -- fixed tower placements and finished sidebar UI
+11/29/21: 4 hours -- debugged issues with git and project and added UI to all levels
