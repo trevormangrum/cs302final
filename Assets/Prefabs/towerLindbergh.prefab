@@ -134,7 +134,7 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   pivot: {fileID: 9149492258429497897}
   barrel: {fileID: 3044066454413303776}
-  bullet: {fileID: 0}
+  bullet: {fileID: 5479740670521644450, guid: b86d88512d24d1344bd72157262e3888, type: 3}
 --- !u!114 &6922768907104086074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pivot: {fileID: 9149492258429497897}
   barrel: {fileID: 3044066454413303776}
-  tower: {fileID: 0}
+  tower: {fileID: -9026926830534977966}
 --- !u!1 &6931845896095554486
 GameObject:
   m_ObjectHideFlags: 0

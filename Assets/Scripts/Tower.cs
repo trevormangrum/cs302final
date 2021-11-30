@@ -30,7 +30,7 @@ public class Tower : MonoBehaviour
         }
         else{
             currentTarget=null;
-        }
+        } 
         
         /*
         if (allEnemies.speeds.Count != 0) {
@@ -54,7 +54,7 @@ public class Tower : MonoBehaviour
         Enemy enemyScript=currentTarget.GetComponent<Enemy>();
         enemyScript.takeDamage(damage);
     }
-    private void Update(){
+    protected virtual void Update(){
         updateCurrTarget();
         //fire();
         if(Time.time>=nxtShot){

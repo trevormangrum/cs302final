@@ -8,8 +8,6 @@ public class towerLindbergh : Tower
     public Transform pivot;
     public Transform barrel;
     public GameObject bullet;
-    public Text rangeText;
-    public Text attackText;
     protected override void fire()
     {
         base.fire();
@@ -36,11 +34,5 @@ public class towerLindbergh : Tower
             }
         }
         flyingFound=false;
-    }
-    
-    public void Update() 
-    {
-        rangeText.text = "Range: " + range.ToString();
-        attackText.text = "Damage: " + damage.ToString();
-    }
+    }    
 }

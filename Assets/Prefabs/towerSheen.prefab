@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pivot: {fileID: 9149492258429497897}
   barrel: {fileID: 3044066454413303776}
-  tower: {fileID: 0}
+  tower: {fileID: 5185221892283000955}
 --- !u!1 &6931845896095554486
 GameObject:
   m_ObjectHideFlags: 0
