@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f01188788ad9e3041ba5fa0d891933c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.5
+  moveSpeed: 1.3
   waypoints:
   - {fileID: 0}
   sprites:
@@ -104,8 +104,9 @@ MonoBehaviour:
   - {fileID: -5431966209374820044, guid: 6adfae900f2341147a4de271b9613d37, type: 3}
   - {fileID: -2868188257930523727, guid: 6adfae900f2341147a4de271b9613d37, type: 3}
   - {fileID: -3434362626164602288, guid: 6adfae900f2341147a4de271b9613d37, type: 3}
+  enemyHp: 50
   enemyDmg: 2
-  bounty: 20
+  bounty: 25
   flying: 0
 --- !u!61 &6889614796672455973
 BoxCollider2D:

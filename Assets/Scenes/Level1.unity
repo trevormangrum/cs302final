@@ -1942,7 +1942,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.14598, y: 0.000007689}
-  m_SizeDelta: {x: 160.5018, y: 46.1299}
+  m_SizeDelta: {x: 160.5018, y: 76.1299}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &460442344
 MonoBehaviour:
@@ -1976,8 +1976,11 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Damage: 25'
+    m_LineSpacing: 0.75
+  m_Text: 'Damage: 30
+
+
+    AttackDelay: 2'
 --- !u!222 &460442345
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3045,7 +3048,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Range: 5'
+  m_Text: 'Range: 7'
 --- !u!222 &850534758
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3199,7 +3202,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Target: Random'
+  m_Text: 'Target: Random Enemy'
 --- !u!222 &893562598
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3636,7 +3639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealthText: {fileID: 1261159227}
   gameOverMenu: {fileID: 394082155}
-  lives: 10
+  lives: 15
 --- !u!4 &1051431631
 Transform:
   m_ObjectHideFlags: 0
@@ -3686,7 +3689,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.14598, y: 0.000007689}
-  m_SizeDelta: {x: 160.5018, y: 46.1299}
+  m_SizeDelta: {x: 160.5018, y: 76.1299}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1076416831
 MonoBehaviour:
@@ -3720,8 +3723,11 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Damage: 50'
+    m_LineSpacing: 0.75
+  m_Text: 'Damage: 100
+
+
+    AttackDelay: 2.5'
 --- !u!222 &1076416832
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4205,7 +4211,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.14598, y: 0.000007689}
-  m_SizeDelta: {x: 160.5018, y: 46.1299}
+  m_SizeDelta: {x: 160.5018, y: 76.1299}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1221851486
 MonoBehaviour:
@@ -4239,8 +4245,11 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Damage: 25'
+    m_LineSpacing: 0.75
+  m_Text: 'Damage: 15
+
+
+    AttackDelay: 1.2'
 --- !u!222 &1221851487
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9536,7 +9545,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.14598, y: 0.000007689}
-  m_SizeDelta: {x: 160.5018, y: 46.1299}
+  m_SizeDelta: {x: 160.5018, y: 76.1299}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1410496553
 MonoBehaviour:
@@ -9570,8 +9579,11 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Damage: 25'
+    m_LineSpacing: 0.75
+  m_Text: 'Damage: 20
+
+
+    AttackDelay: 1.5'
 --- !u!222 &1410496554
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10001,7 +10013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoneyText: {fileID: 764641724}
-  currentPlayerMoney: 1000
+  currentPlayerMoney: 400
 --- !u!4 &1492406809
 Transform:
   m_ObjectHideFlags: 0

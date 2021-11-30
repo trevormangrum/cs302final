@@ -129,9 +129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7982a2d67dd1db3429282d01b89e5d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 5
-  damage: 25
-  attackspeed: 1
+  range: 7
+  damage: 20
+  attackspeed: 1.5
   currentTarget: {fileID: 0}
   pivot: {fileID: 9149492258429497897}
   barrel: {fileID: 3044066454413303776}
