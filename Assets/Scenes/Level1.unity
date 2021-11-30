@@ -10001,7 +10001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoneyText: {fileID: 764641724}
-  currentPlayerMoney: 1000
+  currentPlayerMoney: 2000
 --- !u!4 &1492406809
 Transform:
   m_ObjectHideFlags: 0

@@ -49,6 +49,7 @@ public class PlacementManager : MonoBehaviour
     }
     public void StartBuilding(GameObject towerToBuild)
     {
+        currentTowerPlacing=towerToBuild;
         if (shopManager.CanBuyTower(currentTowerPlacing) == true)
         {
             isBuilding = true;
@@ -66,7 +67,8 @@ public class PlacementManager : MonoBehaviour
             }
         }
         else 
-        {
+        {    
+            //Destroy(currentTowerPlacing);
             Debug.Log("Not enough money. Cannot buy tower");
         }
         

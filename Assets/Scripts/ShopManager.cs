@@ -48,6 +48,7 @@ public class ShopManager : MonoBehaviour
 
     public void BuyTower(GameObject towerPrefab)
     {
+        Debug.Log("Tower Bought Costs" + GetTowerCost(towerPrefab));
         moneyManager.RemoveMoney(GetTowerCost(towerPrefab));
     }
 
@@ -56,7 +57,10 @@ public class ShopManager : MonoBehaviour
         int cost = GetTowerCost(towerPrefab);
 
         bool canBuy = false;
-
+        GameObject mm = GameObject.FindWithTag("MoneyManager");
+        Debug.Log("Current Money: "+  mm.GetComponent<MoneyManager>().currentPlayerMoney);
+        Debug.Log("Tower Cost: "+cost);
+        Debug.Log("Tower is: " + towerPrefab);
         if (moneyManager.GetCurrentMoney() >= cost)
         {
             canBuy = true;
