@@ -31,24 +31,6 @@ public class Tower : MonoBehaviour
         else{
             currentTarget=null;
         } 
-        
-        /*
-        if (allEnemies.speeds.Count != 0) {
-            allEnemies.speeds.Sort();
-            for (int i = 0; i < allEnemies.enemies.Count; i++) 
-            {
-                Enemy curEnemy = allEnemies.enemies[i].GetComponent<Enemy>();
-                if (curEnemy.GetSpeed() == allEnemies.speeds[allEnemies.speeds.Count-1])
-                {
-                    Debug.Log("Enemy speed: " + curEnemy.GetSpeed());
-                    currentTarget = allEnemies.enemies[i];
-                    break;
-                }
-            }
-        }
-        else
-            currentTarget = null;
-        */
     }
     protected virtual void fire(){
         Enemy enemyScript=currentTarget.GetComponent<Enemy>();
