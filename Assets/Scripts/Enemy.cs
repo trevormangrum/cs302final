@@ -5,7 +5,7 @@ using System.Linq;
 
 public class Enemy : MonoBehaviour
 {
-    public float moveSpeed = 1.0f;
+    public float moveSpeed = 1f;
     public GameObject[] waypoints;
     Transform t;
     SpriteRenderer sr; 
