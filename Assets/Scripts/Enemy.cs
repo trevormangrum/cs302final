@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-
+//using UnityEngine.Audio;
 public class Enemy : MonoBehaviour
 {
     public float moveSpeed = 1f;
     public GameObject[] waypoints;
     Transform t;
+    //private AudioSource coinSound;
     SpriteRenderer sr; 
     //Enemies changing sprites handled by: https://answers.unity.com/questions/767796/sprite-animation-dependant-on-object-direction.html
     public Sprite[] sprites;
     Vector3 target;
     private int waypointIndex;
-    private float enemyHp;
+    public float enemyHp=100;
     public int enemyDmg;//dmg enemy deals to gate
     public int bounty;//gold recieved for killing enemy
     public bool flying;
@@ -97,6 +98,8 @@ public class Enemy : MonoBehaviour
     }
     private void die(){
         //handles the enemies death
+        //coinSound = GetComponent<AudioSource>();
+        //coinSound.Play();
         allEnemies.enemies.Remove(gameObject);
         allEnemies.speeds.Remove(moveSpeed);
         Destroy(transform.gameObject);
