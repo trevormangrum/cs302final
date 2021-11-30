@@ -8,8 +8,11 @@ public class towerDickens : Tower
     public Transform pivot;
     public Transform barrel;
     public GameObject bullet;
+    private AudioSource shotSound;
     protected override void fire()
     {
+        shotSound = GetComponent<AudioSource>();
+        shotSound.Play();
         base.fire();
         GameObject newBullet = Instantiate(bullet,barrel.position,pivot.rotation);
     }
