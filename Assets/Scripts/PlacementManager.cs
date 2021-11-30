@@ -30,6 +30,7 @@ public class PlacementManager : MonoBehaviour
     }
     public void PlaceBuilding() 
     {
+        /*
         if (isBetween(15.7, 25.3, hoverPos.x) && isBetween(-.3, 1.3, hoverPos.y)) Debug.Log("Cannot place tower");
         else if (isBetween(15.7, 17.2, hoverPos.x) && isBetween(-.3, 14.1, hoverPos.y)) Debug.Log("Cannot place tower");
         else if (isBetween(5.6, 15.7, hoverPos.x) && isBetween(12.7, 14.1, hoverPos.y)) Debug.Log("Cannot place tower");
@@ -40,11 +41,12 @@ public class PlacementManager : MonoBehaviour
         else if (hoverPos.x > 25.3 || hoverPos.x < 2) Debug.Log("Cannot place tower");
         else 
         {
+            */
             GameObject newTowerObject = Instantiate(currentTowerPlacing);
             newTowerObject.transform.position = hoverPos;
             EndBuilding();
             shopManager.BuyTower(currentTowerPlacing);
-        }
+       // }
         
     }
     public void StartBuilding(GameObject towerToBuild)

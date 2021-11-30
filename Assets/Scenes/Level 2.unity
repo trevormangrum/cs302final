@@ -1337,10 +1337,10 @@ MonoBehaviour:
   darwinPrefab: {fileID: 3582435608703677229, guid: d462e9db8563b69479f8c034fd854afd, type: 3}
   dickensPrefab: {fileID: 3582435608703677229, guid: f97ff7b11c71c8649b256b0a79ad47d7, type: 3}
   lindberghPrefab: {fileID: 3582435608703677229, guid: 5923d2832d9eeef4497c041bd910b47b, type: 3}
-  sheenTowerCost: 500
+  sheenTowerCost: 200
   darwinTowerCost: 200
   dickensTowerCost: 200
-  lindberghTowerCost: 200
+  lindberghTowerCost: 500
   sheenCostText: {fileID: 1344532454}
   darwinCostText: {fileID: 1383440799}
   dickensCostText: {fileID: 446854834}
