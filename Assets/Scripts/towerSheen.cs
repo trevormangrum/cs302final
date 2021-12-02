@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 //inherits tower
 //This tower type deals 2x damage and targets random enemies
+
 public class towerSheen : Tower
 {
     public Transform pivot;
@@ -12,7 +13,7 @@ public class towerSheen : Tower
     private AudioSource shotSound;
     protected override void fire()
     {
-        shotSound = GetComponent<AudioSource>();
+        shotSound = GetComponent<AudioSource>();//Sound
         shotSound.Play();
         base.fire();
         GameObject newBullet = Instantiate(bullet,barrel.position,pivot.rotation);
@@ -25,7 +26,7 @@ public class towerSheen : Tower
         int randIndex;
         if(allEnemies.numEnemies!=0){
             while(newTarget==null){
-                randIndex=rand.Next(allEnemies.numEnemies);
+                randIndex=rand.Next(allEnemies.numEnemies);//Random
                 newTarget=allEnemies.enemies[randIndex];
                 currentTarget=newTarget;
                 distance=(transform.position-newTarget.transform.position).magnitude;
@@ -33,7 +34,7 @@ public class towerSheen : Tower
                 currentTarget=newTarget;
                 }
                 else{
-                    currentTarget=null;
+                    currentTarget=null;//if target not in range then set it to null
                 }
             }
         }

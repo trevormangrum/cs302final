@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //Credit to ZeveonHD for a helpful tutorial to write this script
+//This tower class is inherited by every tower in the game
 public class Tower : MonoBehaviour
 {
     

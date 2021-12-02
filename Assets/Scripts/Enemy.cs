@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 //using UnityEngine.Audio;
+//Enemy class
 public class Enemy : MonoBehaviour
 {
     public float moveSpeed = 1f;
@@ -23,7 +24,6 @@ public class Enemy : MonoBehaviour
 
     private void Awake(){
         allEnemies.enemies.Add(gameObject);
-        allEnemies.speeds.Add(moveSpeed);
         allEnemies.numEnemies++;
     }
 
@@ -73,7 +73,6 @@ public class Enemy : MonoBehaviour
             Debug.Log("HERE!");
             if(gameObject) {
                 allEnemies.enemies.Remove(gameObject);
-                allEnemies.speeds.Remove(moveSpeed);
                 Destroy(gameObject);
                 allEnemies.numEnemies--;
                 //Updates how many enemies have died/made it through in the wave manager
@@ -101,7 +100,7 @@ public class Enemy : MonoBehaviour
         //coinSound = GetComponent<AudioSource>();
         //coinSound.Play();
         allEnemies.enemies.Remove(gameObject);
-        allEnemies.speeds.Remove(moveSpeed);
+        //allEnemies.speeds.Remove(moveSpeed);
         Destroy(transform.gameObject);
         allEnemies.numEnemies--;
         GameObject wm = GameObject.FindWithTag("WaveManager");

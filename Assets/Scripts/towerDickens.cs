@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class towerDickens : Tower
+//This unit takes out enemies that give the most Money
+public class towerDickens : Tower//Inherits tower like all other towers
 {
     public Transform pivot;
     public Transform barrel;
@@ -11,7 +12,7 @@ public class towerDickens : Tower
     private AudioSource shotSound;
     protected override void fire()
     {
-        shotSound = GetComponent<AudioSource>();
+        shotSound = GetComponent<AudioSource>();//Sound
         shotSound.Play();
         base.fire();
         GameObject newBullet = Instantiate(bullet,barrel.position,pivot.rotation);
@@ -27,7 +28,7 @@ public class towerDickens : Tower
                     break;
                 }
                 Enemy targetScript=currentTarget.GetComponent<Enemy>();
-                if(enemyScript.getDmg()>targetScript.getDmg()){
+                if(enemyScript.getBounty()>targetScript.getBounty()){
                     currentTarget=enemy;
                 }
             }

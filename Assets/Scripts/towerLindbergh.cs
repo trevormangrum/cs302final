@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 //Shoots the closest unit, prioritizing units with flying
-public class towerLindbergh : Tower
+public class towerLindbergh : Tower//Inherits tower like all other towers
 {
     public Transform pivot;
     public Transform barrel;
@@ -11,7 +11,7 @@ public class towerLindbergh : Tower
     private AudioSource shotSound;
     protected override void fire()
     {
-        shotSound = GetComponent<AudioSource>();
+        shotSound = GetComponent<AudioSource>();//Sound
         shotSound.Play();
         base.fire();
         GameObject newBullet = Instantiate(bullet,barrel.position,pivot.rotation);
