@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Credit to ZeveonHD for a helpful tutorial to write this script
+// This script is used to rotate the barrel visually, but the barrel was not used
+// in our final product
 public class BarrelRotation : MonoBehaviour
 {
     public Transform pivot;

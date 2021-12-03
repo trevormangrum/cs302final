@@ -13,7 +13,7 @@ public class SpawnEnemies : MonoBehaviour
        t = GetComponent<Transform>(); 
     }
 
-    // Update is called once per frame
+    // Spawn a new wave of enemies when space is pressed
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space)) {

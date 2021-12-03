@@ -17,40 +17,24 @@ public class PlacementManager : MonoBehaviour
     {
     }
 
-    public bool isBetween(double small, double big, double num)
-    {
-        if (num > small && num < big)
-            return true;
-        else 
-            return false;
-    }
     public void SetMousePosition()
     {
+        // Set mouse position
         hoverPos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
     public void PlaceBuilding() 
     {
-        /*
-        if (isBetween(15.7, 25.3, hoverPos.x) && isBetween(-.3, 1.3, hoverPos.y)) Debug.Log("Cannot place tower");
-        else if (isBetween(15.7, 17.2, hoverPos.x) && isBetween(-.3, 14.1, hoverPos.y)) Debug.Log("Cannot place tower");
-        else if (isBetween(5.6, 15.7, hoverPos.x) && isBetween(12.7, 14.1, hoverPos.y)) Debug.Log("Cannot place tower");
-        else if (isBetween(5.6, 7.2, hoverPos.x) && isBetween(7.1, 14.1, hoverPos.y)) Debug.Log("Cannot place tower");
-        else if (isBetween(5.6, 11.3, hoverPos.x) && isBetween(7.1, 8.3, hoverPos.y)) Debug.Log("Cannot place tower");
-        else if (isBetween(9.7, 11.3, hoverPos.x) && isBetween(-.3, 8.3, hoverPos.y)) Debug.Log("Cannot place tower");
-        else if (isBetween(2, 11.3, hoverPos.x) && isBetween(-.3, 1.3, hoverPos.y)) Debug.Log("Cannot place tower");
-        else if (hoverPos.x > 25.3 || hoverPos.x < 2) Debug.Log("Cannot place tower");
-        else 
-        {
-            */
-            GameObject newTowerObject = Instantiate(currentTowerPlacing);
-            newTowerObject.transform.position = hoverPos;
-            EndBuilding();
-            shopManager.BuyTower(currentTowerPlacing);
-       // }
+        // Instantiate a new tower object and call a function to buy the given tower
+        GameObject newTowerObject = Instantiate(currentTowerPlacing);
+        newTowerObject.transform.position = hoverPos;
+        EndBuilding();
+        shopManager.BuyTower(currentTowerPlacing);
         
     }
     public void StartBuilding(GameObject towerToBuild)
     {
+        // Figures out which tower is being built and start building if the player has 
+        // enough money to buy it
         currentTowerPlacing=towerToBuild;
         if (shopManager.CanBuyTower(currentTowerPlacing) == true)
         {
@@ -70,7 +54,6 @@ public class PlacementManager : MonoBehaviour
         }
         else 
         {    
-            //Destroy(currentTowerPlacing);
             Debug.Log("Not enough money. Cannot buy tower");
         }
         
@@ -87,6 +70,7 @@ public class PlacementManager : MonoBehaviour
  
     public void Update()
     {
+        // Track where the player is moving the tower that needs to be placed
         SetMousePosition();
         if (isBuilding)
         {

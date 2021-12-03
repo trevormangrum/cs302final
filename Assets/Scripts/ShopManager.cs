@@ -23,6 +23,7 @@ public class ShopManager : MonoBehaviour
     public Text dickensCostText;
     public Text lindberghCostText;
 
+    // Function to return the cost of the tower
     public int GetTowerCost(GameObject towerPrefab)
     {
         int cost = 0;
@@ -46,12 +47,14 @@ public class ShopManager : MonoBehaviour
         return cost;
     }
 
+    // Function to buy the tower
     public void BuyTower(GameObject towerPrefab)
     {
         Debug.Log("Tower Bought Costs" + GetTowerCost(towerPrefab));
         moneyManager.RemoveMoney(GetTowerCost(towerPrefab));
     }
 
+    // Function to say whather the player can buy a tower
     public bool CanBuyTower(GameObject towerPrefab)
     {
         int cost = GetTowerCost(towerPrefab);
@@ -71,6 +74,7 @@ public class ShopManager : MonoBehaviour
 
     public void Update() 
     {
+        // Display all the costs of the tower in the UI
         sheenCostText.text = "Cost: " + sheenTowerCost.ToString();
         darwinCostText.text = "Cost: " + darwinTowerCost.ToString();
         dickensCostText.text = "Cost: " + dickensTowerCost.ToString();

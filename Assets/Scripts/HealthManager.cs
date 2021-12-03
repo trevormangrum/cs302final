@@ -18,6 +18,7 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Display player health on UI and if player is out of health, show game over screen
        playerHealthText.text = lives.ToString();
        if (lives <= 0)
        {

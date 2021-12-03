@@ -7,8 +7,6 @@ public class Bullet : MonoBehaviour
 {
 
     private void Start() {
-        // delete bullet after 10 secs if it isn't already destroyed (there is a bug in this, tries to access bullet even though it's deleted)
-        //Destroy(gameObject, 10f);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

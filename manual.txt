@@ -1,0 +1,69 @@
+
+CS 302 Final Project Report
+
+Report
+
+Timelog
+Nolan Askew
+10/18/21: 2 hours -- worked in lab to create milestones and a sample object 
+ 	  2 hours -- created a sample project and followed a tutorial on how to use scripting in Unity
+10/19/21: 
+	  2 hours -- created the UI for the main menu and had it connect to a level scene that has a sphere that moves when spacebar it pressed
+10/26/21: 1.5 hours -- created a pause menu and linked level select buttons
+10/31/21: .5 hours -- scaled everything to fit the size of the screen
+11/11/21: 1 hour -- watched a tutorial for a 2D tower defense game in Unity
+11/19/21: .5 hours -- learned and messed around with tower scripts
+11/20/21: .5 hours -- created basic level UI
+11/22/21: 2 hours -- gave towers a graphic and bullets and have them shoot at the enemies
+11/22/21: 1 hour -- made towers placable
+11/24/21: .5 hours -- added shop manager and made UI work
+11/24/21: 1 hour -- fixed towers placed by UI and attempted to add money when enemy is killed
+11/26/21: 1 hour -- made algorithm for tower to target enemy with the highest speed
+11/28/21: 1.5 hours -- made towers not placable on path, displayed player money, made new tasks
+11/28/21: 1.5 hours -- created topbar, indicators, and info panel
+11/29/21: 2 hours -- fixed tower placements and finished sidebar UI
+11/29/21: 4 hours -- debugged issues with git and project and added UI to all levels
+Total: 23.5 hours
+
+Andrew Hines
+10/15/2021      Unity Essentials tutorial                                                                                                            3:20-4:20     1                 1
+10/18/2021      Practice Template                                                                                                                    3:30-5:00     1.5               2.5
+10/21/2021      Lego Template                                                                                                                        4-4:30         .5               3
+10/22/2021      Advanced 2DTemplate                                                                                                                  3:15-5:00     1.75              4.75
+10/26/2021 	Found Youtube playlist detailing Tower defense games in Unity. Watched and followed along with the first episodes                    6:00-7:30     1.5               6.25
+10/28/2021      Followed alone with episode 3                                                                                                        2:00-3:15     1.25              7.5
+11/2/2021       Tried to convert map from 3d tutorial to 2d                                                                                          11:30-12:30   1                 8.5
+11/5/2021       Scratched the 3d tutorial, watched a 2d tutorial and followed along                                                                  3:15-4:15     1                 9.5
+11/14/2021      Began work on 2d basic Towers                                                                                                        5:00-7:00     2
+11/26/2021      Continued work on multiple tower targetting types,                                                                                   12:00-2:00    2                 11.5
+11/28/2021      Continued work on multiple tower targetting types, found and fixed push issue in my repo that has been around since the beginning    4:00-6:00     2                 13.5
+11/28/2021      Art Work to make towers looks better/add faces                                                                                       6:00-8:00     2                 15.5
+11/29/2021      Finished work on photoshopping sprites and adding lasers                                                                             11:30-1:30   2                  17.5
+11/29/2021      Recorded Soundtrack, imported Tower Noises                                                                                           5:00-8:00    3                  20.5
+Total: 20.5 hours
+
+Trevor Mangrum 
+10/18/2021 -- 2 hrs -- Worked on milestones and setting up repo 
+10/21/2021 -- 2 hrs -- Worked on learning the basics of the Unity Editor and created a basic Level Select UI.
+10/21/2021 -- 2 hrs -- Worked on learning about sprite creation and tilesets/tilemaps to create the first towers/levels.
+
+11/24/2021 -- 2 hrs -- Worked on adding multiple enemies and updating their sprites based on which direction they're facing.
+11/25/2021 -- 2 hrs -- Started work on the wave system, ran into a lot of trouble with it 
+11/26/2021 -- 2 hrs -- Finished wave system
+11/29/2021 -- 2 hrs -- Reworked components of wave system, added more rounds
+Total: 14 hours
+
+TOTAL GROUP HOURS: 58 
+
+Manual
+
+CHARLES VS CARLS TOWER DEFENSE
+
+Nolan Askew, Andrew Hines, Trevor Mangrum
+
+Build Instructions
+You may download the .exe file to run the game. To access the game in Unity,
+the project may be cloned from GitHub "git clone https://github.com/trevormangrum/cs302final.git", 
+and then opened using Unity Hub
+
+Known Bugs

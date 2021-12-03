@@ -15,6 +15,7 @@ public class InfoPanelUI : MonoBehaviour
 
     public void OpenMenu()
     {
+        // Allows info panels to be open and closed 
         if (!isOpen) {
             infoPanelUI.SetActive(true);
             isOpen = true;
